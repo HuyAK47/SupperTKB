@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#457cf4">
+
+        <EditText
+            android:id="@+id/etThu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Thứ"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/etMonHoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etThu"
+            android:gravity="center"
+            android:hint="Môn học"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/etPhongHoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etMonHoc"
+            android:gravity="center"
+            android:hint="Phòng học"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/etTietHoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPhongHoc"
+            android:gravity="center"
+            android:hint="Tiết học"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_below="@+id/etTietHoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnThem"
+                android:background="@drawable/bg_btn_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etTietHoc"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="7dp"
+                android:text="Thêm" />
+
+            <Button
+                android:background="@drawable/bg_btn_form"
+                android:id="@+id/btnThoat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnThem"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="7dp"
+                android:text="Back"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

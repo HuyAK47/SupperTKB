@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/iThu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:hint="Thu"
+            android:layout_marginBottom="3dp"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/iMonHoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iThu"
+            android:gravity="center"
+            android:hint="Mon hoc"
+            android:layout_marginBottom="3dp"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/iPhongHoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iMonHoc"
+            android:gravity="center"
+            android:hint="Phong hoc"
+            android:layout_marginBottom="3dp"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/iTietHoc"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Tiet"
+            android:layout_below="@+id/iPhongHoc"
+            android:textSize="24dp" />
+    </RelativeLayout>
+</RelativeLayout>
